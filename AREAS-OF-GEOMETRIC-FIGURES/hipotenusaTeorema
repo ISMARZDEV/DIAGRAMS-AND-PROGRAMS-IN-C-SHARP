@@ -1,0 +1,25 @@
+using System;
+
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        
+
+        static void Main(string[] args)
+        {
+            double Hipotenusa;
+            double CatetoOP, CatetoAD;
+
+            Console.Write("Digite el Cateto Adyacente: ");
+            CatetoAD = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Digite el Cateto Opuesto: ");
+            CatetoOP = Convert.ToDouble(Console.ReadLine());
+
+            Hipotenusa = Math.Sqrt((Math.Pow(CatetoAD, 2)) + (Math.Pow(CatetoOP, 2)));
+
+            Console.WriteLine("La hipotenusa es {0}cm", Hipotenusa);
+        }
+    }
+}
