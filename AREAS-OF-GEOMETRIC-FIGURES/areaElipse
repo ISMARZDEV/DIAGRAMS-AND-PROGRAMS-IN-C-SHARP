@@ -4,21 +4,22 @@ namespace ConsoleApp
 {
     internal class Program
     {
+        
+
         static void Main(string[] args)
         {
-            double Base, Altura;
-            double areaTriangulo;
+            double RadioMayor, RadioMenor;
+            double areaElipse;
 
-            Console.Write("Digite la Base: ");
-            Base = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Digite el RadioMayor: ");
+            RadioMayor = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Digite la Altura: ");
-            Altura = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Digite el RadioMenor: ");
+            RadioMenor = Convert.ToDouble(Console.ReadLine());
 
-            areaTriangulo = (Base * Altura) / 2;
+            areaElipse = (Math.PI * RadioMayor * RadioMenor);
 
-            Console.WriteLine("El área del Triangulo es {0} x {1} / 2 = {2:N2}cm", Base, Altura, areaTriangulo);
-            
+            Console.WriteLine("El área de Elipse es ({0:N2} x {1} x {2}) = {3:N2}cm²", Math.PI, RadioMayor, RadioMenor,areaElipse);
         }
     }
 }
