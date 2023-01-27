@@ -4,20 +4,19 @@ namespace ConsoleApp
 {
     internal class Program
     {
+        
+
         static void Main(string[] args)
         {
-            int lado1, lado2;
-            int areaCuadrado;
+            double Radio;
+            double areaCirculo;
 
-            Console.Write("Digite el Lado #1: ");
-            lado1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Digite el Radio: ");
+            Radio = Convert.ToDouble(Console.ReadLine());
+            
+            areaCirculo = (Math.PI) * (Math.Pow(Radio,2));
 
-            Console.Write("Digite el Lado #2: ");
-            lado2 = Convert.ToInt32(Console.ReadLine());
-
-            areaCuadrado = (lado1 * lado2);
-
-            Console.WriteLine("El área del cuadrado es {0} x {1} = {2}cm²", lado1, lado2, areaCuadrado);
+            Console.WriteLine("El área del Circulo es ({0:N2} x {1}²) = {2:N2}cm²", Math.PI, Radio, areaCirculo);
         }
     }
 }
