@@ -6,18 +6,19 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            double Apotema, Perimetro;
-            double areaHexagono;
+            int Base, Altura;
+            int areaRectangulo;
 
-            Console.Write("Digite el Apotema: ");
-            Apotema = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Digite la Base: ");
+            Base = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Digite el Perimetro: ");
-            Perimetro = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Digite la Altura: ");
+            Altura = Convert.ToInt32(Console.ReadLine());
 
-            areaHexagono = (Apotema * Perimetro) / 2;
+            areaRectangulo = (Base * Altura);
 
-            Console.WriteLine("El área del Hexagono es ({0} x {1}) / 2 = {2:N2}cm²", Apotema, Perimetro, areaHexagono);
+            Console.WriteLine("El área del Rectangulo es {0} x {1} = {2}cm²", Base, Altura, areaRectangulo);
+            
         }
     }
 }
