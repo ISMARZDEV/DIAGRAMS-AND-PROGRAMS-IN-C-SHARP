@@ -1,23 +1,23 @@
 using System;
 
-namespace ConsoleApp
+namespace ConsoleApp5
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int Base, Altura;
-            int areaRectangulo;
+            int lado1, lado2;
+            int areaCuadrado;
 
-            Console.Write("Digite la Base: ");
-            Base = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Digite el Lado #1: ");
+            lado1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Digite la Altura: ");
-            Altura = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Digite el Lado #2: ");
+            lado2 = Convert.ToInt32(Console.ReadLine());
 
-            areaRectangulo = (Base * Altura);
+            areaCuadrado = (lado1 * lado2);
 
-            Console.WriteLine("El área del Rectangulo es {0} x {1} = {2}cm²", Base, Altura, areaRectangulo);
+            Console.WriteLine("El área del cuadrado es {0} x {1} = {2}cm²", lado1, lado2, areaCuadrado);
             
         }
     }
