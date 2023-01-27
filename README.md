@@ -1,4 +1,4 @@
-# DIAGRAMS-AND-PROGRAMS-IN-C-SHARP
+# DIAGRAMS
 
 <p align="center">
   <img src="https://github.com/ISMARZDEV/DIAGRAMS-AND-PROGRAMS-IN-C-SHARP-1/blob/main/img/DiagramaAreaCirculo.jpg?raw=true">
