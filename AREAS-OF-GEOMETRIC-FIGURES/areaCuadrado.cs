@@ -9,16 +9,19 @@ namespace ConsoleApp5
             int lado1, lado2;
             int areaCuadrado;
 
-            Console.Write("Digite el Lado #1: ");
+            // Ask the user to enter the first side
+            Console.Write("Ingrese Lado #1: ");
             lado1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Digite el Lado #2: ");
+            // Ask the user to enter the second side
+            Console.Write("Ingrese Lado #2: ");
             lado2 = Convert.ToInt32(Console.ReadLine());
 
+            // Calculate the area of the square
             areaCuadrado = (lado1 * lado2);
 
+            // Print the result of the calculation on the screen
             Console.WriteLine("El área del cuadrado es {0} x {1} = {2}cm²", lado1, lado2, areaCuadrado);
-            
         }
     }
 }
